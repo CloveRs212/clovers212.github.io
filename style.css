@@ -1,0 +1,490 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/****** My CSS *******/
+
+
+
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 120px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand {
+  font-family: catamaran;
+  font-size: 24 px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header nav ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: catamaran;
+  font-size:  16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    text-align: left;
+    margin: 31px 0;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+    line-height: 38px;
+  }
+  
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+  
+  header nav ul li a {
+   line-height: 60px;
+  }
+
+  header .header-cases {
+  display: block;
+  font-family: catamaran;
+  font-size:  16px;
+  color: #111;
+  text-transform: uppercase;
+  line-height: 38px;
+  border: 1px solid #111;
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  padding: 0 20px;
+  }
+  
+
+}
+
+/***** INDEX ******/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('img/developer1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.verticle-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-family: catamaran;
+  font-size:  60px;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: catamaran;
+  font-size:  28px;
+  font-weight: 100;
+  font-style: italic;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100%-32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: catamaran;
+  font-size:  28px;
+  color: #111;
+  line-height: 100px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 0;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-boxlink-square {
+    width: calc(25% - 20px) !important;
+  }
+  
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px);
+  }
+  
+  .index-links div h3 {
+    line-height: 230px;
+  }
+
+}
+
+
+/* Cases */
+
+.cases-content {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cases1 {
+  float: left;
+  width: 230px;
+  height: 230px;
+  margin: 20px 10px 0px;
+  background-color: #e3e3e3;
+}
+
+.cases-content h2{
+  font-family: catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: left;
+  padding-left: 12px;
+  text-transform: uppercase;
+  }
+
+.cases-content p {
+padding-top: 45%;
+font-family: catamaran;
+font-size: 24px;
+font-weight: 600;
+color: #111;
+text-align: center;
+text-transform: uppercase;
+}
+
+
+/* CASE 1 */
+
+.case-me h2 {
+  font-family: catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+.cases-contact-me {
+  float: center;
+  margin-bottom: 20px;
+  height: 180px;
+  background-color: #e3e3e3;
+}
+
+.cases-contact-me h2 {
+  font-family: catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  padding-left: 12px;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
+.cases-contact-me p {
+  font-family: catamaran;
+  font-size: 24px;
+  font-weight: 400;
+  color: #111;
+  text-align: center;
+  padding-left: 12px;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+
+/****** Footer ******/
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: catamaran;
+  font-size:  24px;
+  color: #fff;
+  line-height: 3opx;
+}
+
+.footer-cases-link {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  
+  .footer-cases-link {
+    display: block;
+  }
+  
+  footer ul {
+    padding-right: 30 px;
+  }
+
+  footer ul li p {
+    font-family: catamaran;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
+
+
+/* Contact Page */
+
+.contact-banner {
+  width: 100%;
+  height: 40vh;
+  background-image: url('img/cannabis1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.contact-banner h2 {
+  font-family: catamaran;
+  font-size:  60px;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.contact-body {
+  display: flex;
+  font-family: catamaran;
+  font-size:  24px;
+  color: #111;
+  font-weight: 300;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-body h2 {
+  margin-top: 20px;
+  padding: 20px 18px 20px;
+  background-color: #e3e3e3;
+  font-weight: 700;
+}
+
+.contact-body div {
+  flex-wrap: wrap;
+  justify-items: center;
+  padding-top: 8px;
+}
+
+.contact-support {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.contact-phone {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+
+/* About Me */
+
+.about-banner {
+  width: 100%;
+  height: calc(60vh - 100px);
+  background-image: url('img/developer2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.about-banner h2 {
+  font-family: catamaran;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.about-banner h1 {
+  font-family: catamaran;
+  font-size:  28px;
+  font-weight: 100;
+  font-style: italic;
+  color: rgb(43, 255, 0);
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  margin-left: 80px;
+  padding-top: 30px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: catamaran;
+  font-size:  24px;
+  color: #111;
+  line-height: 40px;
+  text-align:left;
+  font-weight: 400;
+}
+
+.about-picture {
+  width: 300px;
+  height: 450px;
+}
+
+.about-text {
+  text-indent: 40px;
+}
+
+.about-hello {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
